@@ -1,0 +1,51 @@
+﻿@import "var.less";
+
+.content {
+    padding-top: 44px;
+
+    .crumb {
+        &:after {
+            content: "";
+            display: block;
+            clear: both;
+            height: 0;
+        }
+
+        ul {
+            li {
+                float: left;
+
+                &:not(:first-child) {
+                    &:before {
+                        content: "《";
+                    }
+                }
+            }
+        }
+    }
+
+    > h2 {
+        margin-top: 46px;
+        font-weight: bold;
+        font-size: 34px;
+        color: #404040;
+        text-align: center;
+        width: 100%;
+        letter-spacing: 2px;
+    }
+
+    .info {
+        margin-top: 15px;
+        text-align: center;
+
+        .jiathis_style {
+            display: inline-block;
+            vertical-align: middle;
+            background-color: transparent;
+        }
+    }
+
+    .text {
+        margin-top: 40px;
+    }
+}

@@ -1,0 +1,143 @@
+﻿@import "var.less";
+
+.footer {
+    padding: 60px 0;
+    background-color: #80000b;
+
+    table {
+        width: @width;
+        margin: 0 auto;
+
+        tr {
+            &:nth-child(1) {
+                height: 35px;
+
+                th {
+                    &:nth-child(1) {
+                        width: 360px;
+                    }
+
+                    &:nth-child(2) {
+                        width: 230px;
+                    }
+
+                    &:nth-child(3) {
+                        width: 240px;
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                height: 55px;
+            }
+
+            &:nth-child(3) {
+                height: 35px;
+            }
+        }
+
+        tr {
+            th {
+                color: #fefefe;
+                font-weight: bold;
+                vertical-align: top;
+                text-align: left;
+
+                h4 {
+                    border-left: 4px solid #00a0e8;
+                    text-indent: 8px;
+                }
+
+                &.code {
+                    text-align: right;
+                }
+            }
+
+            td {
+                color: #cccccc;
+                font-size: 12px;
+
+                span {
+                    &:before {
+                        content: "";
+                        display: inline-block;
+                        width: 16px;
+                        height: 16px;
+                        background: no-repeat center center;
+                        vertical-align: text-bottom;
+                        margin-right: 8px;
+                    }
+                }
+
+                &.tel {
+                    span {
+                        &:nth-child(1) {
+                            margin-right: 50px;
+
+                            &:before {
+                                background-image: url(/Image/dianhua.png);
+                            }
+                        }
+
+                        &:nth-child(2) {
+                            &:before {
+                                background-image: url(/Image/shouji.png);
+                            }
+                        }
+                    }
+                }
+
+                &.zip {
+                    span:before {
+                        background-image: url(/Image/youbian.png);
+                    }
+                }
+
+                &.contact_us {
+                    ul {
+                        margin-left: 13px;
+                    }
+                }
+
+                &.address {
+                    span:before {
+                        background-image: url(/Image/dingwei.png);
+                    }
+                }
+
+                &.email {
+                    span:before {
+                        background-image: url(/Image/youxiang.png);
+                    }
+                }
+            }
+        }
+    }
+
+    .friend_links {
+        text-align: center;
+        margin-top: 84px;
+
+        dl {
+            color: #cccccc;
+            font-size: 12px;
+            display: inline-block;
+
+            dt {
+                float: left;
+            }
+
+            dd {
+                float: left;
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .profile {
+        text-align: center;
+        color: #cccccc;
+        margin-top:20px;
+        font-size:12px;
+    }
+}

@@ -1,0 +1,53 @@
+﻿@import "reset.css";
+@import "var.less";
+
+body {
+    font-size: 14px;
+    font-family: 'Microsoft YaHei','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4e4e4e;
+    background-color: white;
+    /*工具样式 开始*/
+    .no_text {
+        text-indent: -9999px;
+    }
+
+    .center {
+        margin: 0 auto;
+    }
+    /*工具样式 结束*/
+    a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+            color: #00a0e8;
+        }
+    }
+
+    .container {
+        background: url(/Image/bg.png);
+        padding-bottom: 160px;
+
+        .content {
+            width: @width;
+            margin: 0 auto;
+        }
+    }
+    /*日期*/
+    .data {
+        color: #666;
+        font-size: 12px;
+    }
+    /*摘要*/
+    .summary {
+        color: #666;
+    }
+    /*"查看详情/更多"链接*/
+    .more {
+        color: #292929;
+    }
+
+    @import "header.less";
+    @import "nav.less";
+    @import "footer.less";
+}

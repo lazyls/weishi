@@ -1,0 +1,8 @@
+﻿站点根目录:当前目录
+浏览时,配置IIS或其它Web服务,请把当前目录作为Web root path
+
+首页		/Html/index.html
+威师风采	/Html/detail.html
+新闻列表页	/Html/news.html
+新闻详情	/Html/new_detail.html
+学校概况	/Html/summary.html
